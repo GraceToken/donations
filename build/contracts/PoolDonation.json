@@ -1,0 +1,167 @@
+{
+  "contract_name": "PoolDonation",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "name": "successful",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "beneficiary",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "graceToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "amount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "canWithdraw",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "releaseTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "contribute",
+      "outputs": [
+        {
+          "name": "successful",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_beneficiary",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "name": "_releaseTime",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "poolAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "donor",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Contribution",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdrawal",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b6040516060806104f98339810160405280805191906020018051919060200180519150505b8282825b60008054600160a060020a038516600160a060020a031991821617909155600183905560028290556003805490911673068577b0c0edef1386d12572b407da65820b825b1790555b5050505b5050505b610462806100976000396000f300606060405236156100675763ffffffff60e060020a6000350416632e1a7d4d811461006c57806338af3eed146100965780637e43c77d146100c5578063aa8c217c146100f4578063b51459fe14610119578063b91d400114610140578063c1cbbca714610165575b600080fd5b341561007757600080fd5b61008260043561018f565b604051901515815260200160405180910390f35b34156100a157600080fd5b6100a96102cc565b604051600160a060020a03909116815260200160405180910390f35b34156100d057600080fd5b6100a96102db565b604051600160a060020a03909116815260200160405180910390f35b34156100ff57600080fd5b6101076102ea565b60405190815260200160405180910390f35b341561012457600080fd5b6100826102f0565b604051901515815260200160405180910390f35b341561014b57600080fd5b6101076102f9565b60405190815260200160405180910390f35b341561017057600080fd5b6100826004356102ff565b604051901515815260200160405180910390f35b6000805433600160a060020a0390811691161415806101af575060015482115b806101bf57506101bd6102f0565b155b156101cc575060006102c7565b60035460008054600160a060020a039283169263a9059cbb9291169085906040516020015260405160e060020a63ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b151561023457600080fd5b6102c65a03f1151561024557600080fd5b50505060405180519050151561025d575060006102c7565b600154610270908363ffffffff61040516565b6001556000547f7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b6590600160a060020a031683604051600160a060020a03909216825260208201526040908101905180910390a15060015b919050565b600054600160a060020a031681565b600354600160a060020a031681565b60015481565b60025442115b90565b60025481565b600354600090600160a060020a03166323b872dd333085856040516020015260405160e060020a63ffffffff8616028152600160a060020a0393841660048201529190921660248201526044810191909152606401602060405180830381600087803b151561036d57600080fd5b6102c65a03f1151561037e57600080fd5b505050604051805190501515610396575060006102c7565b6001546103a9908363ffffffff61041c16565b6001557f71be8766c1bd9bb33623f518aecc1d98612c75b596f4a0c38408f72239ef4e60303384604051600160a060020a039384168152919092166020820152604080820192909252606001905180910390a15060015b919050565b60008282111561041157fe5b508082035b92915050565b60008282018381101561042b57fe5b8091505b50929150505600a165627a7a72305820dcc329da7d51945890ab49a61c9a8050284bc3f856b702906743188602e594870029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1504027181481
+}

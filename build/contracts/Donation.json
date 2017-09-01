@@ -1,0 +1,177 @@
+{
+  "contract_name": "Donation",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "name": "successful",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "beneficiary",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "graceToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "amount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "canWithdraw",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "releaseTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_beneficiary",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "name": "_releaseTime",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdrawal",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x606060405260018054600160a060020a0319167324ca74090c7496d34b7e1431f09a541110dc7453179055341561003557600080fd5b6040516060806104318339810160405280805191906020018051919060200180519150505b60008054600160a060020a03808616600160a060020a031992831617909255600284905560038390556001546004805490921692169190911790555b5050505b610388806100a96000396000f300606060405236156100805763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632e1a7d4d811461008557806338af3eed146100af5780637e43c77d146100de5780639d76ea581461010d578063aa8c217c1461013c578063b51459fe14610161578063b91d400114610188575b600080fd5b341561009057600080fd5b61009b6004356101ad565b604051901515815260200160405180910390f35b34156100ba57600080fd5b6100c2610303565b604051600160a060020a03909116815260200160405180910390f35b34156100e957600080fd5b6100c2610312565b604051600160a060020a03909116815260200160405180910390f35b341561011857600080fd5b6100c2610321565b604051600160a060020a03909116815260200160405180910390f35b341561014757600080fd5b61014f610330565b60405190815260200160405180910390f35b341561016c57600080fd5b61009b610336565b604051901515815260200160405180910390f35b341561019357600080fd5b61014f61033f565b60405190815260200160405180910390f35b6000805433600160a060020a0390811691161415806101cd575060025482115b806101dd57506101db610336565b155b156101ea575060006102fe565b60045460008054600160a060020a039283169263a9059cbb929116908590604051602001526040517c010000000000000000000000000000000000000000000000000000000063ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b151561026b57600080fd5b6102c65a03f1151561027c57600080fd5b505050604051805190501515610294575060006102fe565b6002546102a7908363ffffffff61034516565b6002556000547f7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b6590600160a060020a031683604051600160a060020a03909216825260208201526040908101905180910390a15060015b919050565b600054600160a060020a031681565b600454600160a060020a031681565b600154600160a060020a031681565b60025481565b60035442115b90565b60035481565b60008282111561035157fe5b508082035b929150505600a165627a7a72305820d464333ac21a9fba71e0fe0ce3b6a47f5b7b63dfdabf240f5a09f17a1726cfd20029",
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xd72ca2c0798e68737e45a23dda0e41e8f1a3b702",
+      "updated_at": 1503955431432
+    },
+    "1503952322297": {
+      "events": {},
+      "links": {},
+      "address": "0x956b664c0b51f44b33e6dc95808f3a9d0e478f66",
+      "updated_at": 1503952621841
+    },
+    "1504022503106": {
+      "events": {
+        "0x7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Withdrawal",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xe8dd92cc4619dc1cf15fd88c3641c62058090bfb",
+      "updated_at": 1504027525671
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1504027525671
+}
